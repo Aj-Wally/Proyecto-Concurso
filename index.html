@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guatemala Esencia Mágica</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="shortcut icon" href="img/images (1).jpg"><!--Iconos para la pagina web-->
+</head>
+
+<body>
+    <!-- HEADER -->
+    <br>
+    <br>
+    <br>
+    <header class="header-degradado text-white text-center py-5">
+        <h1>Destinos Turísticos de Guatemala</h1>
+    </header>
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/50057-guatemala-maravillosa-1024x575_66d1f5ba3a303.png" alt="Logo"
+                    style="max-height: 50px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Destinos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Tikal</a></li>
+                            <li><a class="dropdown-item" href="#">Lago de Atitlán</a></li>
+                            <li><a class="dropdown-item" href="#">Antigua Guatemala</a></li>
+                            <li><a class="dropdown-item" href="#">Quetzaltenango (Xela)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Actividades</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <h6 class="dropdown-header">Aventura</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Senderismo y Volcanes</a></li>
+                            <li><a class="dropdown-item" href="#">Rafting</a></li>
+                            <li><a class="dropdown-item" href="#">Ciclismo de Montaña</a></li>
+                            <li><a class="dropdown-item" href="#">Cuevas y Exploración</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header">Cultura</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Visitas Arqueológicas (Mayas)</a></li>
+                            <li><a class="dropdown-item" href="#">Recorridos Coloniales</a></li>
+                            <li><a class="dropdown-item" href="#">Mercados Locales</a></li>
+                            <li><a class="dropdown-item" href="#">Clases de Cocina</a></li>
+                            <li><a class="dropdown-item" href="#">Talleres de Tejido</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header">Naturaleza</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Avistamiento de Aves</a></li>
+                            <li><a class="dropdown-item" href="#">Parques Nacionales</a></li>
+                            <li><a class="dropdown-item" href="#">Cascadas y Piscinas Naturales</a></li>
+                            <li><a class="dropdown-item" href="#">Relajación en Playas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Planifica
+                            tu viaje</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Alojamiento</a></li>
+                            <li><a class="dropdown-item" href="#">Transporte</a></li>
+                            <li><a class="dropdown-item" href="#">Guías Turísticos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ESPACIADOR PARA QUE EL NAVBAR NO CUBRA EL CONTENIDO -->
+    <div style="margin-top: 100px;"></div>
+
+
+    <!-- CARRUSEL -->
+    <section id="carrusel" class="container my-4">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/jimmy-baum-N4gc_5rZ9dM-unsplash-1024x768.png" class="d-block w-100" alt="Tikal">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Tikal: Donde la Historia Maya cobra Vida</h5>
+                        <p>Adéntrate en la selva de Petén y maravíllate con las imponentes pirámides de una de las
+                            ciudades más
+                            poderosas del Mundo Maya. Un viaje al pasado te espera</p>
+                        <a href="#" class="btn btn-light">Explora Tikal</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/3.-Xela-to-Lake-Atitlan.jpg" class="d-block w-100" alt="Atitlán">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Atitlán: El Lago de los Volcanes, Hogar de Culturas Vibrantes.</h5>
+                        <p>Sumérgete en las aguas del Lago de Atitlán, rodeado por majestuosos volcanes y pueblos
+                            indígenas que
+                            conservan sus tradiciones ancestrales. Paz y aventura en un solo lugar."</p>
+                        <a href="#" class="btn btn-light">Visita Atitlán</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/guatemala.jpg" class="d-block w-100" alt="Antigua Guatemala">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Antigua Guatemala - Joya Colonial y Encanto Eterno</h5>
+                        <p>Pasea por las calles empedradas de Antigua, admira su arquitectura barroca y sus coloridas
+                            fachadas. Una
+                            ciudad Patrimonio de la Humanidad que te transporta en el tiempo.</p>
+                        <a href="#" class="btn btn-light">Recorre Antigua</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- AQUÍ PUEDES AGREGAR MÁS SECCIONES COMO QUIÉNES SOMOS, GALERÍA, FORMULARIO, MAPA... -->
+    <!-- SECCIÓN QUIÉNES SOMOS -->
+    <section id="quienes-somos" class="container my-5">
+        <div class="text-center mb-4">
+            <h2>Conoce Guatemala: Esencia Mágica</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h4>¿Quiénes Somos?</h4>
+                <p>Somos un equipo apasionado de guatemaltecos dedicados a promover la belleza y riqueza cultural
+                    de nuestra nación. Creemos que Guatemala es un destino único, lleno de historia, aventura y una
+                    calidez humana incomparable. Nuestro objetivo es ser tu puente hacia experiencias auténticas y
+                    memorables</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Nuestra Historia</h4>
+                <p>Fundada en 2023, Guatemala Esencia Mágica nació de la visión de un grupo de viajeros y expertos
+                    en turismo que querían compartir el "Corazón del Mundo Maya" con el mundo. Desde nuestros
+                    inicios, nos hemos comprometido a ofrecer información precisa y experiencias que respeten la
+                    cultura local y promuevan el turismo sostenible.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Nuestros Objetivos</h4>
+                <p>Buscamos ser la principal referencia en línea para la planificación de viajes a Guatemala,
+                    ofreciendo guías completas, consejos prácticos y la inspiración necesaria para cada aventura. Nos
+                    esforzamos por destacar la diversidad de nuestros destinos, desde ruinas ancestrales hasta
+                    paraísos naturales, y apoyar a las comunidades locales a través del turismo responsable.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA DE DESTINOS -->
+    <section id="destinos" class="container my-5">
+        <div class="text-center mb-4">
+            <h2>Descubre los Tesoros de Guatemala</h2>
+            <p>Explora algunos de los destinos más increíbles del país.</p>
+        </div>
+
+        <!--Tarjeta numero 1-->
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <img src="img/Tikal_3.jpg" class="card-img-top" alt="Tikal">
+                    <div class="card-body">
+                        <h5 class="card-title">Tikal, Petén</h5>
+                        <p class="card-text">Un patrimonio de la humanidad, Tikal es el corazón de
+                            la civilización Maya. Sus templos y plazas, envueltos en la densa
+                            selva, ofrecen una experiencia arqueológica y natural inigualable.
+                            Ideal para amantes de la historia y la aventura. <br><br>
+                            Templos mayas, biodiversidad, amaneceres
+                            espectaculares</p>
+                        <a href="#" class="btn btn-outline-primary">Ver Detalle de Tikal</a>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!--Tarjeta numero 2-->
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <img src="img/lago-atitlan-1.jpg" class="card-img-top" alt="Lago de Atitlán">
+                    <div class="card-body">
+                        <h5 class="card-title">Lago de Atitlán, Sololá</h5>
+                        <p class="card-text">Rodeado por tres imponentes volcanes y pueblos mayas
+                            (como Santiago Atitlán, San Juan La Laguna y Panajachel), este lago
+                            es un oasis de tranquilidad y cultura viva. Perfecto para la relajación,
+                            la aventura y la inmersión cultural. <br><br>
+                            Pueblos indígenas, kayaking, vistas panorámicas,
+                            mercados locales.</p>
+                        <a href="#" class="btn btn-outline-primary">Ver Detalle de Atitlán</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Tarjeta numero 3-->
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <img src="img/guatemala.jpg" class="card-img-top" alt="Antigua Guatemala">
+                    <div class="card-body">
+                        <h5 class="card-title">Antigua Guatemala, Sacatepéquez</h5>
+                        <p class="card-text">La antigua capital colonial de Guatemala, famosa por
+                            su impresionante arquitectura barroca, iglesias en ruinas y calles
+                            adoquinadas. Explora sus museos, galerías de arte y disfruta de su
+                            vibrante vida nocturna y culinaria. <br><br>
+                            Arco de Santa Catalina, Cerro de la Cruz, iglesias
+                            coloniales, café.</p>
+                        <a href="#" class="btn btn-outline-primary">Ver Detalle de Antigua</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <!--Tarjeta numero 4-->
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <img src="img/Xela-2906-240_pp.jpg" class="card-img-top" alt="Xela">
+                    <div class="card-body">
+                        <h5 class="card-title">Quetzaltenango (Xela), Quetzaltenango</h5>
+                        <p class="card-text">La segunda ciudad más grande de Guatemala, conocida
+                            por su clima fresco, su arquitectura neoclásica y su vida cultural
+                            activa. Un centro ideal para explorar el altiplano occidental y aprender
+                            español." <br><br> Volcán Santa María, Fuentes Georginas, Centro Histórico.</p>
+                        <a href="#" class="btn btn-outline-primary">Ver Detalle de Xela</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Tarjeta numero 5-->
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <img src="img/view-from-the-water.jpg" class="card-img-top" alt="Semuc Champey">
+                    <div class="card-body">
+                        <h5 class="card-title">Semuc Champey, Alta Verapaz</h5>
+                        <p class="card-text">Un paraíso natural escondido, famoso por sus piscinas
+                            naturales de agua turquesa escalonadas sobre un puente de piedra
+                            caliza. Rodeado de densa vegetación, es ideal para la aventura y la
+                            desconexión.<br><br> Cascadas, cuevas, tubing, senderismo </p>
+                        <a href="#" class="btn btn-outline-primary">Ver Detalle de Semuc</a>
+                    </div>
+                </div>
+            </div>
+            <!--Tarjeta numero 6-->
+            <div class="col-md-4">
+                <div class="card h-100 shadow">
+                    <img src="img/Livingston,_Izabal_-_Guatemala.jpg" class="card-img-top" alt="Río Dulce y Livingston">
+                    <div class="card-body">
+                        <h5 class="card-title">Río Dulce y Livingston, Izabal</h5>
+                        <p class="card-text">Una combinación de fortaleza colonial, un
+                            impresionante cañón fluvial y una vibrante cultura garífuna. Navega
+                            por el río, relájate en aguas caribeñas y sumérgete en una experiencia
+                            única <br><br> Castillo de San Felipe, Cayo Quemado, cultura garífuna,
+                            Biotopo Chocón Machacas.</p>
+                        <a href="#" class="btn btn-outline-primary">Ver Detalle de Río Dulce</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto-ubicacion" class="container my-5">
+        <div class="row">
+
+            <!-- FORMULARIO -->
+            <div class="col-md-6">
+                <div class="text-center mb-4">
+                    <h2>Contáctanos</h2>
+                    <p>¿Tienes alguna pregunta o deseas más información? ¡Escríbenos!</p>
+                </div>
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-12">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                        <div class="invalid-feedback">
+                            Por favor, escribe tu nombre.
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" required>
+                        <div class="invalid-feedback">
+                            Por favor, ingresa un correo válido.
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                        <div class="invalid-feedback">
+                            Por favor, escribe tu mensaje.
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button class="btn btn-enviar" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- MAPA -->
+            <div class="col-md-6">
+                <div class="text-center mb-4">
+                    <h2>¿Dónde Estamos?</h2>
+                    <p>Visítanos en nuestras oficinas ubicadas en Quetzaltenango.</p>
+                </div>
+                <div class="ratio ratio-4x3">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.727843053115!2d-91.5215344855988!3d14.835355389742166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858e97f1093d61ff%3A0x8671975cdb4c2b16!2sQuetzaltenango%2C%20Guatemala!5e0!3m2!1ses!2sgt!4v1669144469722!5m2!1ses!2sgt"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Boton para volver al inicio-->>
+    <button id="scrollTopBtn" class="btn btn-warning position-fixed bottom-0 end-0 m-4"
+        style="display: none; z-index: 9999;">
+        <i class="bi bi-arrow-up-circle-fill">Volver a arriba</i>
+    </button>
+
+    <footer class="bg-dark text-white mt-5 pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <!-- Columna 1: Contacto -->
+                <div class="col-md-3 mb-3">
+                    <h5>Contáctanos</h5>
+                    <p>
+                        Dirección: 7ma Calle 29-21, Zona 3, Quetzaltenango, Guatemala<br>
+                        Teléfono: +502 4223-1400<br>
+                        Correo: info@guatemalaviajes.com<br>
+                        Horario: Lunes a Viernes, 9:00 AM - 5:00 PM
+                    </p>
+                </div>
+
+                <!-- Columna 2: Enlaces útiles -->
+                <div class="col-md-3 mb-3">
+                    <h5>Explora Más</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Mapa del Sitio</a></li>
+                        <li><a href="#" class="text-white">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Legal y privacidad -->
+                <div class="col-md-3 mb-3">
+                    <h5>Información Legal</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Política de Privacidad</a></li>
+                        <li><a href="#" class="text-white">Términos y Condiciones</a></li>
+                        <li><a href="#" class="text-white">Aviso Legal</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Redes y newsletter -->
+                <div class="col-md-3 mb-3">
+                    <h5>Conéctate con Nosotros</h5>
+                    <a href="https://www.facebook.com/NASA" target="blank" aria-label="facebook"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            class="bi-social" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg></a>
+                    <a href="https://www.instagram.com/nasa/" target="blank" aria-label="instagram"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            class="bi-social" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334">
+                            </path>
+                        </svg></a>
+                    <a href="https://x.com/NASA" target="blank" aria-label="Twitter"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            class="bi-social" viewBox="0 0 16 16">
+                            <path
+                                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z">
+                            </path>
+                        </svg></a>
+                    <a href="#" target="_blank" aria-label="Youtube">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path
+                                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                        </svg></a>
+
+                    <a href="#" target="_blank" aria-label="Tiktok">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            class="bi bi-tiktok" viewBox="0 0 16 16">
+                            <path
+                                d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+                        </svg>
+                    </a>
+                    <br>
+                    <br>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Tu correo">
+                        <button class="btn btn-outline-light" type="submit">Suscribir</button>
+                    </form>
+                    <small class="d-block mt-2">Recibe las Mejores Ofertas y Novedades de Guatemala.
+                        ¡Suscríbete!</small>
+                </div>
+            </div>
+            <!-- Línea inferior -->
+            <div class="text-center pt-3 border-top mt-4">
+                <p class="mb-0">&copy; 2025 Guatemala Esencia Mágica. Todos los derechos reservados.</p>
+                <p class="mb-0">Diseñado con ♡ en Guatemala.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+<!-- experimental
+        <div class="form-check form-switch text-end mt-2">
+        <input class="form-check-input" type="checkbox" id="modoOscuro">
+        <label class="form-check-label" for="modoOscuro">Modo oscuro</label>
+    </div>
+    -->

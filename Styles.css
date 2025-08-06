@@ -1,0 +1,282 @@
+/* Animación de entrada (fade-in) para elementos con clase .fade-in */
+.fade-in {
+    opacity: 0; /* Inicialmente invisible */
+    transform: translateY(20px); /* Posición desplazada hacia abajo */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Transiciones suaves */
+}
+
+/* Estilo de fondo degradado para encabezado */
+.header-degradado {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+/* Cuando se agrega la clase .show, se activa la animación */
+.fade-in.show {
+    opacity: 1; /* Se vuelve visible */
+    transform: translateY(0); /* Vuelve a su posición original */
+}
+
+/*  ESTILOS DE TARJETAS  */
+
+/* Estilo base de las tarjetas dentro de #destinos */
+#destinos .card {
+    height: 100%; /* Ocupa todo el alto disponible */
+    background-color: #ffffff; /* Fondo blanco */
+    display: flex; /* Flexbox para organizar el contenido verticalmente */
+    flex-direction: column;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta contenido que se salga */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Efecto al pasar el cursor por una tarjeta */
+#destinos .card:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-5px); /* Se eleva un poco */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
+}
+
+/* Imagen en la parte superior de la tarjeta */
+#destinos .card-img-top {
+    height: 250px;
+    object-fit: cover; /* Cubre el contenedor sin deformarse */
+    transition: transform 0.3s ease;
+}
+
+/* Al pasar el mouse por la tarjeta, la imagen se agranda ligeramente */
+#destinos .card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* Cuerpo de la tarjeta organizado verticalmente */
+#destinos .card-body {
+    flex-grow: 1; /* Ocupa todo el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Título de la tarjeta */
+#destinos .card-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Texto de la tarjeta */
+#destinos .card-text {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+/* ESTILOS PARA BOTONES EN TARJETAS */
+
+/* Estilo inicial del botón */
+#destinos .card .btn {
+    background-color: wheat; /* Color de fondo */
+    color: #222; /* Texto oscuro */
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    transition: background 1s ease-in-out, color 1s ease-in-out, transform 0.4s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Al pasar el mouse, el botón cambia a degradado oscuro */
+#destinos .card .btn:hover {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Estilo adicional del botón con borde y texto dorado */
+#destinos .card .btn {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #ffc107;
+    color: #ffc107;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    z-index: 1;
+    transition: background 2s ease, transform 2.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover: fondo degradado invertido y leve aumento */
+#destinos .card .btn:hover {
+    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    transform: scale(1.05);
+}
+
+/* Efecto de desplazamiento desde la izquierda para el fondo del botón */
+#destinos .card .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #203a43, #2c5364);
+    transition: left 1.3s ease;
+    z-index: -1;
+}
+
+/* Cuando se hace hover, el fondo se desliza hacia la derecha */
+#destinos .card .btn:hover::before {
+    left: 0;
+}
+
+/* También cambia color de texto y elimina borde al hacer hover */
+#destinos .card .btn:hover {
+    color: white !important;
+    border-color: transparent;
+}
+
+/* CARRUSEL */
+
+/* Fondo semitransparente para el texto del carrusel */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/* Imagen del carrusel con tamaño máximo y ajuste */
+.carousel-inner img {
+    max-height: 650px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* MENÚS DESPLEGABLES  */
+
+/* Ocultos por defecto, con transición suave */
+.dropdown-menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    margin-top: 0.5rem;
+}
+
+/* Al pasar el mouse por el contenedor, se muestra el menú */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+}
+
+/* FOOTER  */
+
+/* Estilo para íconos sociales en el pie de página */
+footer .bi-social,
+footer .bi {
+    color: wheat;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Al hacer hover, los íconos crecen y se vuelven blancos */
+footer .bi-social:hover,
+footer .bi:hover {
+    transform: scale(1.2);
+    color: white;
+}
+
+/* Campo de entrada para newsletter */
+footer input[type="email"] {
+    border-radius: 0.375rem;
+}
+
+/* Enlaces del footer al hacer hover: subrayado */
+footer a.text-white:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/* Fondo degradado del footer */
+footer {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+/* Subrayado animado en los enlaces del footer */
+footer a {
+    position: relative;
+    text-decoration: none;
+}
+
+footer a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffc107;
+    transition: width 0.3s;
+}
+
+footer a:hover::after {
+    width: 100%;
+}
+
+/* Botón “Enviar” con fondo wheat y degradado al hover */
+.btn-enviar {
+    background-color: wheat;          /* Color inicial */
+    color: #222;                      /* Texto oscuro */
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    transition: background 0.5s ease, color 0.5s ease, transform 0.3s ease;
+}
+
+/* Degradado suave al pasar el ratón y elevar el botón */
+.btn-enviar:hover {
+    background: linear-gradient(
+        to right,
+        #0f2027,
+        #203a43,
+        #2c5364
+    );                                 /* Degradado oscuro */
+    color: white;                     /* Texto claro */
+    transform: translateY(-2px);      /* Pequeña elevación */
+}
+
+
+/* RESPONSIVE */
+
+/* Ajustes para móviles */
+@media (max-width: 767px) {
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+    }
+
+    #destinos .card .btn {
+        font-size: 0.95rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+/* Ajustes para tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .card-title {
+        font-size: 1.15rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+}
